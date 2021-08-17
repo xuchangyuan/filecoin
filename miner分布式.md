@@ -1,4 +1,3 @@
-[TOC]
 
 # 分布式Miner模块配置和使用
 
@@ -15,8 +14,8 @@
 - 支持同一个MinerId在多台机器上分布式部署；
 - 支持Window-post-miner、Winning-post-miner、Deal-miner、Seal-miner功能分离：
     1. PoSt-miner：负责Window-PoSt和Winning-PoSt，可分开为两台机器，也可由一台机器完成;
-        * Window-post-miner：负责扇区窗口证明时的扇区抽查及提交；
-        * Winning-post-miner：负责出块时扇区的随机抽查
+    1.1 Window-post-miner：负责扇区窗口证明时的扇区抽查及提交；
+    1.2 Winning-post-miner：负责出块时扇区的随机抽查
     2. Deal-miner：负责接单和检索，和订单扇区密封的任务分配；
     3. Seal-miner：负责普通扇区密封的任务分配。
 
